@@ -1,8 +1,11 @@
 document.querySelector("#mybutton").addEventListener("click", checkNumber);
 
-var randomNumber=Math.floor(Math.random() * 10);
+var randomNumber=Math.floor(Math.random() * 10); //makes sure the number is an integer
 
 var guessCount=0
+
+/*checks if the number is correct, smaller or larger then secret number,
+each time this is done it adds to the guess count*/
 
 function checkNumber(){
     guessCount++
