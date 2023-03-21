@@ -38,7 +38,11 @@ document.querySelector("#mybutton").addEventListener("click", romanOutput);
 function romanOutput() {
   var message
   var number = +document.querySelector("#number").value;
-  message = convertToRoman(number)
+  if (!Number.isInteger(number)) {
+    message = "Number must be an integer."
+  } else {
+     message = convertToRoman(number)
+  }
 
   document.querySelector("#message").innerHTML = message
 }
