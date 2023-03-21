@@ -29,10 +29,17 @@ document.querySelector("#mybutton").addEventListener("click", generateNumber);
 
 function generateNumber(){
     var message
-    var minNumber = document.querySelector("#minNumber").value;
-    var maxNumber = document.querySelector("#maxNumber").value;
-    console.log(""+minNumber+" "+" "+maxNumber)
-    message= takeNumbers(minNumber,maxNumber)
-        
+    var minNumber = +document.querySelector("#minNumber").value;
+    var maxNumber = +document.querySelector("#maxNumber").value;
+    if (!Number.isInteger(minNumber)) {
+        message = "Min Number must be an integer."
+    } else if (!Number.isInteger(maxNumber)) {
+        message = "Max Number must be an integer."
+    } else if (minNumber > maxNumber){
+        message = "min number must be smaller then max number"
+    }
+    else{
+        message= takeNumbers(minNumber,maxNumber)
+    }
     document.querySelector("#message").innerHTML = message
 }
