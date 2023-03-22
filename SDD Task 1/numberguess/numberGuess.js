@@ -10,7 +10,7 @@ each time this is done it adds to the guess count*/
 function checkNumber(){
     guessCount++
     var message
-    var number = document.querySelector("#number").value;
+    var number = +document.querySelector("#number").value;
     if (number<randomNumber){
         message = "the secret number is higher"
     }
@@ -20,5 +20,6 @@ function checkNumber(){
     else{
        message = "your number is correct! You took " + guessCount + " guesses"
     }
+
     document.querySelector("#message").innerHTML = message
 }

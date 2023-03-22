@@ -57,7 +57,6 @@ const morseCode = {
 };
 
 function convertToMorseCode(sentence) {
-    const sentenceAsArray = sentence.split("");
     var outputMorse = ""
     for (var i = 0; i < sentence.length; i++) {
         var letter = sentence[i];
