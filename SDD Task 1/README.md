@@ -57,7 +57,7 @@ Let's take 45 as an example. Set outlyingNumber to 45
 ## morse code converter
 Algorithm
 
-1. build the dictionary with the more code
+1. build the dictionary with the morse code
 ```
     "A": ".-",
     "B": "-...",

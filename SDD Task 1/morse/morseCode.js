@@ -62,7 +62,7 @@ function convertToMorseCode(sentence) {
         var letter = sentence[i];
         var morseLetter = morseCode[letter.toUpperCase()]
         if (!morseLetter) {
-            throw new Error(" Letter " + letter + " is undefined");
+            return " Letter " + letter + " is undefined";
           }
         outputMorse = outputMorse + morseLetter
     }
