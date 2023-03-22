@@ -1,14 +1,14 @@
 # Design
 All my programs follow a similar pattern:
 - An html file with a user interface. It includes a text box or multiple text boxes to capture the input and a field to present an output message
-- A javascript file loaded by the html. Most of the javasctipt files for my programms follow the pattern:
+- A javascript file loaded by the html. Most of the javasctipt files for my programs follow the pattern:
   - A function that interacts with html:
     - Read a text from the input text boxes
     - Perform validations
     - Invoke the function with the program logic
     - Print the message to the output field (either an error message or result of calculations)
   - A function with the core logic.
-    THe function takes the input parameters and returns the result of calculations
+    The function takes the input parameters and returns the result of calculations
 
 # Implemented tasks
 
